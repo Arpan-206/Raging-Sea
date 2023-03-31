@@ -12,8 +12,8 @@ import waterFragmentShader from "./shaders/water/fragment.glsl";
 const gui = new dat.GUI({ width: 340 });
 const debugObject = {};
 
-debugObject.depthColor = "#186691";
-debugObject.surfaceColor = "#9bd8ff";
+debugObject.depthColor = "#65b9e6";
+debugObject.surfaceColor = "#153a75";
 
 gui.addColor(debugObject, "depthColor").onChange(() => {
   waterMaterial.uniforms.uDepthColor.value.set(debugObject.depthColor);
